@@ -7,15 +7,18 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.GenerationType;
 
-
+@Entity
 public class User {
 
-
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
     private String username;
     private String email;
     private String displayname;
     private LocalDate birthday;
+
+
     public String getUsername() {
         return username;
     }
