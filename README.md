@@ -15,7 +15,11 @@ In UserRepository, declare the following methods that help to find all user and 
 - `data.sql` contains insert statements for dummy users. Find where this file is and explain what it is used for? 
 
 ```
-src/main/resources/data.sql
+data.sql is used to preload the database with initial data when your Spring Boot application starts.
+
+It contains SQL INSERT statements to add dummy users (or other test data) into your database tables.
+
+This is especially useful when using an in-memory database like H2, where data is lost every time the app restarts.
 ```
 
 ## User Reservice - Complete the code
